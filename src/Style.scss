@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
     border: solid 3px;
-    width: 300px;
+    width: 80vw;
     display: flex;
+}
+
+.informacoes {
+    border: solid 2px red;
 }
 
 .premios {

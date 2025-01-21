@@ -16,30 +16,26 @@ export default function App() {
   ];
 
   return(
-  <>
-  <h1>Oscarflix</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, illum?</p>
-
-  
-  <section id='vencedores24'>
-  <h2>Vencedores Oscar 2024</h2>
-    <div className='card'>
-    {ganhadores24.map((index, id) => (
-      <article key={id}>
-        <img src={index.img} alt={index.altImg} />
-        <div className='premios'>
-          <img src={trofeu} alt="Icone de um troféu." />
-          <h4>{index.premios}</h4>
-        </div>
-        <h3>{index.titulo}</h3>
-        <p>{index.descricao}</p>
-        <p>Onde assistir: <a href={index.ondeAssistirLink} target="_blank" rel="noopener noreferrer">{index.ondeAssistir}</a></p>
-      
-      </article>
-    ))}
-    </div>
-
-  </section>
-
-  </>)
+    <main>
+      <h1>Oscarflix</h1>
+      <section id="vencedores24">
+        <h2>Vencedores Oscar 2024</h2>
+        {ganhadores24.map((index, id) => (
+          <article key={id} className='card'>
+            <img src={index.img} alt={index.altImg} />
+            <div className="informacoes">
+              <div className="premios">
+                <img src={trofeu} alt="Ícone de um troféu." />
+                <h4>{index.premios}</h4>
+              </div>
+              <h3>{index.titulo}</h3>
+              <p>{index.descricao}</p>
+              <p>Onde assistir: <a href={index.ondeAssistirLink} target="_blank" rel="noopener noreferrer">{index.ondeAssistir}</a></p>
+            </div>
+          </article>
+        )
+      )}
+      </section>
+    </main>
+  )
 }
