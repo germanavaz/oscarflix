@@ -10,10 +10,20 @@ main {
     align-items: center;
 }
 
-.card {
-    border: solid 3px;
-    width: 80vw;
+.cards {
     display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 90vw;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.card {
+    display: flex;
+    border: solid 3px black;
+    width: 44vw;
 }
 
 .informacoes {
