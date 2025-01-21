@@ -1,4 +1,5 @@
 import './Style.scss';
+import trofeu from './assets/trofeu.png';
 
 export default function App() {
 
@@ -22,16 +23,18 @@ export default function App() {
   
   <section id='vencedores24'>
   <h2>Vencedores Oscar 2024</h2>
-    <div>
+    <div className='card'>
     {ganhadores24.map((index, id) => (
       <article key={id}>
         <img src={index.img} alt={index.altImg} />
-        <div>
+        <div className='premios'>
+          <img src={trofeu} alt="Icone de um troféu." />
           <h4>{index.premios}</h4>
-          <h3>{index.titulo}</h3>
-          <p>{index.descricao}</p>
-          <p>Onde assistir: <a href={index.ondeAssistirLink} target="_blank" rel="noopener noreferrer">{index.ondeAssistir}</a></p>
         </div>
+        <h3>{index.titulo}</h3>
+        <p>{index.descricao}</p>
+        <p>Onde assistir: <a href={index.ondeAssistirLink} target="_blank" rel="noopener noreferrer">{index.ondeAssistir}</a></p>
+      
       </article>
     ))}
     </div>

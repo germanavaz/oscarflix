@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
-#vencedores24 {
-    
+.card {
+    border: solid 3px;
+    width: 300px;
+    display: flex;
+}
 
-    div {
-        border: solid 3px;
-        width: 30vw;
-        display: flex;
-        
+.premios {
+    display: flex;
+    gap: 5px;
+
+    img {
+        width: 20px;
     }
 }
