@@ -24,6 +24,10 @@ main {
     display: flex;
     border: solid 3px black;
     width: 44vw;
+
+    img {
+        width: 260px;;
+    }
 }
 
 .informacoes {
