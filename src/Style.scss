@@ -1,7 +1,10 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet"');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -26,19 +29,49 @@ main {
     width: 44vw;
 
     img {
-        width: 260px;;
+        width: 260px;
+    }
+
+    h3 {
+        font-family: 'Montserrat';
+        font-size: 30px;
     }
 }
 
 .informacoes {
     border: solid 2px red;
+    padding: 2%;
+
+    p {
+        padding-bottom: 15px;
+    }
+
+    a {
+        background-color: aliceblue;
+        padding: 5px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        background-color: black;
+        color: beige;
+    }
 }
 
 .premios {
     display: flex;
     gap: 5px;
+    align-items: center;
+    padding-bottom: 10px;
 
     img {
         width: 20px;
+        height: 20px;
+    }
+    h4 {
+        font-family: 'Montserrat';
+        font-weight: 500;
     }
 }
