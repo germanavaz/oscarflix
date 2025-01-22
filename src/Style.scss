@@ -7,16 +7,55 @@
     font-family: 'Roboto', sans-serif;
 }
 
-main {
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 97vh;
+
+    h1 {
+        font-family: 'Montserrat';
+        font-size: 65px;
+    }
+
+    p {
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    img {
+        width: 50%;
+    }
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    img {
+        max-width: 50px;
+    }
+}
+
+#vencedores24 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+    padding: 30px 0;
+
+    h2 {
+        color: lightgray;
+        padding-bottom: 20px;
+        font-family: 'Montserrat';
+        font-size: 35px;
+    }
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
     width: 90vw;
     flex-direction: row;
     justify-content: space-between;
@@ -25,11 +64,12 @@ main {
 
 .card {
     display: flex;
-    border: solid 3px black;
     width: 44vw;
+    background-color: lightgray;
+    border-radius: 35px;
 
     img {
-        width: 260px;
+        width: 150px;
     }
 
     h3 {
@@ -39,7 +79,6 @@ main {
 }
 
 .informacoes {
-    border: solid 2px red;
     padding: 2%;
 
     p {
@@ -56,7 +95,7 @@ main {
 
     a:hover {
         background-color: black;
-        color: beige;
+        color: aliceblue;
     }
 }
 

@@ -1,5 +1,7 @@
 import './Style.scss';
 import trofeu from './assets/trofeu.png';
+import banner from './assets/banner.svg';
+import seta from './assets/seta.png'
 
 export default function App() {
 
@@ -98,7 +100,14 @@ export default function App() {
 
   return(
     <main>
-      <h1>Oscarflix</h1>
+      <section id="banner">
+        <div className="banner">
+          <h1>Oscarflix</h1>
+          <p>Guia da onde achar os filmes indicados e ganhadores à premiação do Oscar.</p>
+          <img src={seta} alt="Icone de seta para baixo" />
+        </div>
+        <img src={banner} alt="Ilustração com elementos de filme e cinema" />
+      </section>
       <section id="vencedores24">
         <h2>Vencedores Oscar 2024</h2>
         <section className="cards">
